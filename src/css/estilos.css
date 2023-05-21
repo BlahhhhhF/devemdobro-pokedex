@@ -21,7 +21,10 @@ header {
 }
 
 header .logo,
-header .imagem-botao {
+header .imagem-botao,
+.cartao-pokemon #megaBotao1,
+.cartao-pokemon #megaBotao2,
+.cartao-pokemon #megaBotao3 {
     width: 30px;
     transition: 0.2s ease-in-out;
 }
@@ -34,8 +37,9 @@ header #botao-alterar-tema {
 header .logo:hover,
 header .imagem-botao:hover,
 main .cartao-pokemon:hover {
-    transform: scale(1.05);
+    transform: scale(1.1);
     cursor: pointer;
+
 }
 
 main {
@@ -143,6 +147,26 @@ main .descricao {
     overflow: scroll;
     font-size: 14px;
     padding-right: 10px;
-
     overflow-x: hidden;
 }
+
+.cartao-pokemon #megaBotao1,
+.cartao-pokemon #megaBotao2,
+.cartao-pokemon #megaBotao3 {
+    background: none;
+    border: none;
+    width: 30px;
+    margin: -5px;
+    background-image: linear-gradient(pink, blue, green, yellow);
+    border-radius: 35px;
+    padding: 5px;
+
+}
+
+#megaBotao1:hover,
+#megaBotao2:hover,
+#megaBotao3:hover {
+    transform: rotate(1turn);
+}
+
+
